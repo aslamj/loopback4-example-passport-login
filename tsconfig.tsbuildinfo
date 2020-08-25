@@ -1496,7 +1496,7 @@
         "signature": "d7c614b14a3f6b5d80c2b3d5edccc76b72183bb114951cc945d84de240579f36",
         "affectsGlobalScope": false
       },
-      "./node_modules/path-to-regexp/dist/index.d.ts": {
+      "./node_modules/@loopback/rest/node_modules/path-to-regexp/dist/index.d.ts": {
         "version": "79f286ae3447141fee2f9cbd15ace5d19ba0bd1c5238ad2009ae35110a4152a3",
         "signature": "79f286ae3447141fee2f9cbd15ace5d19ba0bd1c5238ad2009ae35110a4152a3",
         "affectsGlobalScope": false
@@ -1851,6 +1851,16 @@
         "signature": "3d970ec16ee54f226d6a3b5d38037a2ce6fe1e7bdd5c53cd45364b2b193d9e12",
         "affectsGlobalScope": false
       },
+      "./node_modules/@types/passport-twitter/index.d.ts": {
+        "version": "8739a17c2580aca689f6a4b3cde697a6add22e0414d1cfc1ef9246e1ea27a66d",
+        "signature": "8739a17c2580aca689f6a4b3cde697a6add22e0414d1cfc1ef9246e1ea27a66d",
+        "affectsGlobalScope": false
+      },
+      "./src/authentication-strategies/twitter.ts": {
+        "version": "c9a100bbe6dd969f1f14a69ce0fa3190e47a06fc7f86dfe4765c84b7808902dd",
+        "signature": "f5a2096bbd5271c1838a6b452dd47c6f0fa5e696cf8931f77a078dffcfdc57e5",
+        "affectsGlobalScope": false
+      },
       "./node_modules/@types/passport-strategy/index.d.ts": {
         "version": "29d59e921bc723594bbfc98230d24f38f0d5a669f28fcf989b7468f4f95b7c52",
         "signature": "29d59e921bc723594bbfc98230d24f38f0d5a669f28fcf989b7468f4f95b7c52",
@@ -1912,8 +1922,8 @@
         "affectsGlobalScope": false
       },
       "./src/authentication-strategies/index.ts": {
-        "version": "d981fb73a346b2d41d4934fd16fe964bc85962f573ad8f594f96358e5fadf6c8",
-        "signature": "5c0e25b404b9830f566efc10c5be8283fc0c590d81d64647ffcbe9c537d69148",
+        "version": "bda3e4b1b1c5ed9e6ebeb53886e53078f712852897f3fefb5f5e2afbc9631e8a",
+        "signature": "3aabd25cc2fdd4cecefef1b8b567e86a0cfb0ea6bfd13224f36251057336b60d",
         "affectsGlobalScope": false
       },
       "./src/services/user.service.ts": {
@@ -1946,6 +1956,11 @@
         "signature": "36ca0275d05105576f16dbae46dd8b9f6f25007f994a3fc99ffac7080d6b632a",
         "affectsGlobalScope": false
       },
+      "./src/authentication-strategy-providers/twitter.ts": {
+        "version": "bbc9000a99e05c44df836cfec060b6d6d185eea18efec15a8deb93eb399d9565",
+        "signature": "7afe9498c5a679f02c7982d32a319753015f80cab2b06e7f76d790b32d43d3fb",
+        "affectsGlobalScope": false
+      },
       "./src/authentication-strategy-providers/oauth2.ts": {
         "version": "237d7d198a55193033c18938e27e803c8d8e3eb576e43490cab38801a4b074fe",
         "signature": "9c61cb64a531ffe885dc85d2707d08f38c2e0fe2d7afbab36ff3546b54f8db0c",
@@ -1961,23 +1976,28 @@
         "signature": "d4488ae1d3278d2a7351e94b036ebd88cd5c6f7656696d5ee8507779c696f48c",
         "affectsGlobalScope": false
       },
-      "./src/authentication-strategy-providers/oauth2.express-mw.ts": {
-        "version": "4b70f37920f9adcb3cfbd7a103dc45ac307f9ed9dc2520ef225fd307dbf2f350",
-        "signature": "de674dacceb4169eea38ca7691b97d28f91d3db91ff68195606e1ac28a07947a",
-        "affectsGlobalScope": false
-      },
       "./src/authentication-strategy-providers/linkedin.express-mw.ts": {
         "version": "c1b278cc3aa5a16897afc1d2f7206b878e252d7d6251cec3c4ba82168289edac",
         "signature": "edc7b7a30d009c2811211d23034d41f4110334f0ddbbb936280ada32d2df6959",
         "affectsGlobalScope": false
       },
+      "./src/authentication-strategy-providers/oauth2.express-mw.ts": {
+        "version": "4b70f37920f9adcb3cfbd7a103dc45ac307f9ed9dc2520ef225fd307dbf2f350",
+        "signature": "de674dacceb4169eea38ca7691b97d28f91d3db91ff68195606e1ac28a07947a",
+        "affectsGlobalScope": false
+      },
+      "./src/authentication-strategy-providers/twitter.express-mw.ts": {
+        "version": "af09aae02a49b8e742d8fff8733fa5abe86c2411f8dbebffc7700f0f445ee0d2",
+        "signature": "26dfdb7cbb8446a52ad88eb9cce4d5630ffbe1dddde0e274958e4be95f7245e0",
+        "affectsGlobalScope": false
+      },
       "./src/authentication-strategy-providers/index.ts": {
-        "version": "95a84b8feb1465486b377196fa85d4b65521ed27b41db8561da3ccd97f54f747",
-        "signature": "bbc6137c35a10342b862a3617e440c112ebbf29cd033354d0fbf1f3a5c41d4fd",
+        "version": "55f9e10eabc3f1f703269f6a5e7692ee8c5c32a7d77b59888cc38a6b215bf615",
+        "signature": "faf4f8d1827994551626e32ea99a6c4eaa228d3436ec0de052428952c6fc9116",
         "affectsGlobalScope": false
       },
       "./src/authentication-interceptors/types.ts": {
-        "version": "9adadf70d87c4f3dde7704f857c0b36e595b93f87a8b4dc975282d29a260e0eb",
+        "version": "e7f2d5eff15042127946d4b72a9c1b5d08fc3928c04a4a24beded89d2ddf4f2f",
         "signature": "0627700a91c92a6959ef0af78a66a7e8f22913f78e54c64e3b0a4af926a9d53f",
         "affectsGlobalScope": false
       },
@@ -2006,9 +2026,14 @@
         "signature": "38e1fa11cc3cde7ab9b1bc81bca0403f9b9e151e4a07ec1621dfe4917906eb0b",
         "affectsGlobalScope": false
       },
+      "./src/authentication-interceptors/twitter.interceptor.ts": {
+        "version": "10324d607756b202ef04cf94753efe5b41b35d68846ffe77afba0416f9a3bfe6",
+        "signature": "51dbfee5d52833d67b344908962c388282b1e09c9862daa0c22ff63c4aead8ec",
+        "affectsGlobalScope": false
+      },
       "./src/authentication-interceptors/index.ts": {
-        "version": "4b89daf7732d52e0b3ade70255ce2788b5116fef38a5f1feb9f6dbdcaff81fd5",
-        "signature": "b13c39ddeeb2689637c2466a374b78b47a970a2712fe9204a2c36a7e42113b48",
+        "version": "ac29603ed4300f7228f3e75b59567b6a6698c843b5e1444aed778177182e0e6f",
+        "signature": "d6b80436841a3ebd84c82830f1974ade24652d640161f449ea3c2af62a4ba8be",
         "affectsGlobalScope": false
       },
       "./node_modules/@loopback/rest-crud/dist/crud-rest.api-builder.d.ts": {
@@ -2032,17 +2057,17 @@
         "affectsGlobalScope": false
       },
       "./src/application.ts": {
-        "version": "759e7cb8c689c3d5ca4b5618f6a22038051c9af275edafe8dbb5d05ba2657158",
+        "version": "ba3044acca12e222b2c312341aa9fbb94a97f13d8eed9f27641d32f438eb5d0a",
         "signature": "d8b9640f13b7790678ae368eb45f10b27d8cc99d46747edd6050966007cbb1c1",
         "affectsGlobalScope": false
       },
       "./src/server.ts": {
-        "version": "4a07538973bc3d408d20997cd52ff5265597c3bbd29db82cda89437b535b1b4e",
+        "version": "a869c25fa8b6ce5288652778a9419f90094499a45e1db7d301f40e521770583c",
         "signature": "250382f0ce61099de98acc49009f1fc7102219e7ad96ee88eb5acd94dc57eba7",
         "affectsGlobalScope": false
       },
       "./src/index.ts": {
-        "version": "7404724f5795a4779a6e58f3ebf61615d8d88532844ded19d084bb12022132ab",
+        "version": "9b8f7133f17ea08a39240d23d7cc783fa6d583e3ea122c3a384210fed8cc5813",
         "signature": "51ae3c1154405cebd1223923bf9567118a0959e9a1dace8121d45f50a1ca959b",
         "affectsGlobalScope": false
       },
@@ -3933,9 +3958,9 @@
         "./node_modules/@loopback/rest/dist/router/rest-router.d.ts",
         "./node_modules/@loopback/rest/dist/router/route-entry.d.ts",
         "./node_modules/@loopback/rest/dist/router/router-base.d.ts",
+        "./node_modules/@loopback/rest/node_modules/path-to-regexp/dist/index.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
-        "./node_modules/@types/node/util.d.ts",
-        "./node_modules/path-to-regexp/dist/index.d.ts"
+        "./node_modules/@types/node/util.d.ts"
       ],
       "./node_modules/@loopback/rest/dist/router/rest-router.d.ts": [
         "./node_modules/@loopback/rest/dist/router/route-entry.d.ts",
@@ -4021,6 +4046,10 @@
       ],
       "./node_modules/@loopback/rest/dist/writer.d.ts": [
         "./node_modules/@loopback/rest/dist/types.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@loopback/rest/node_modules/path-to-regexp/dist/index.d.ts": [
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
@@ -4781,6 +4810,12 @@
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/passport/index.d.ts"
       ],
+      "./node_modules/@types/passport-twitter/index.d.ts": [
+        "./node_modules/@types/express/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/passport/index.d.ts"
+      ],
       "./node_modules/@types/passport/index.d.ts": [
         "./node_modules/@types/express/index.d.ts",
         "./node_modules/@types/node/http.d.ts",
@@ -4986,10 +5021,6 @@
         "./node_modules/openapi3-ts/dist/model/openapi.d.ts"
       ],
       "./node_modules/openapi3-ts/dist/model/specificationextension.d.ts": [
-        "./node_modules/@types/node/ts3.2/util.d.ts",
-        "./node_modules/@types/node/util.d.ts"
-      ],
-      "./node_modules/path-to-regexp/dist/index.d.ts": [
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
@@ -5203,6 +5234,7 @@
         "./src/authentication-interceptors/linkedin.interceptor.ts",
         "./src/authentication-interceptors/oauth2.interceptor.ts",
         "./src/authentication-interceptors/session.interceptor.ts",
+        "./src/authentication-interceptors/twitter.interceptor.ts",
         "./src/authentication-interceptors/types.ts"
       ],
       "./src/authentication-interceptors/linkedin.interceptor.ts": [
@@ -5225,6 +5257,12 @@
         "./node_modules/@types/node/util.d.ts",
         "./src/authentication-strategies/types.ts",
         "./src/models/index.ts"
+      ],
+      "./src/authentication-interceptors/twitter.interceptor.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@loopback/rest/dist/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
       ],
       "./src/authentication-interceptors/types.ts": [
         "./node_modules/@loopback/core/dist/index.d.ts",
@@ -5279,6 +5317,7 @@
         "./src/authentication-strategies/local.ts",
         "./src/authentication-strategies/oauth2.ts",
         "./src/authentication-strategies/session.ts",
+        "./src/authentication-strategies/twitter.ts",
         "./src/authentication-strategies/types.ts"
       ],
       "./src/authentication-strategies/linkedin.ts": [
@@ -5329,6 +5368,18 @@
         "./src/authentication-strategies/types.ts",
         "./src/models/index.ts",
         "./src/repositories/index.ts"
+      ],
+      "./src/authentication-strategies/twitter.ts": [
+        "./node_modules/@loopback/authentication-passport/dist/index.d.ts",
+        "./node_modules/@loopback/authentication/dist/index.d.ts",
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@loopback/rest/dist/index.d.ts",
+        "./node_modules/@loopback/security/dist/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/passport-twitter/index.d.ts",
+        "./src/authentication-strategies/types.ts",
+        "./src/models/index.ts"
       ],
       "./src/authentication-strategies/types.ts": [
         "./node_modules/@loopback/authentication/dist/index.d.ts",
@@ -5386,7 +5437,9 @@
         "./src/authentication-strategy-providers/linkedin.express-mw.ts",
         "./src/authentication-strategy-providers/linkedin.ts",
         "./src/authentication-strategy-providers/oauth2.express-mw.ts",
-        "./src/authentication-strategy-providers/oauth2.ts"
+        "./src/authentication-strategy-providers/oauth2.ts",
+        "./src/authentication-strategy-providers/twitter.express-mw.ts",
+        "./src/authentication-strategy-providers/twitter.ts"
       ],
       "./src/authentication-strategy-providers/linkedin.express-mw.ts": [
         "./node_modules/@loopback/core/dist/index.d.ts",
@@ -5419,6 +5472,24 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/passport-oauth2/index.d.ts",
+        "./node_modules/@types/passport/index.d.ts",
+        "./src/authentication-strategies/types.ts",
+        "./src/models/index.ts",
+        "./src/services/index.ts"
+      ],
+      "./src/authentication-strategy-providers/twitter.express-mw.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@loopback/rest/dist/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/passport-twitter/index.d.ts"
+      ],
+      "./src/authentication-strategy-providers/twitter.ts": [
+        "./node_modules/@loopback/authentication/dist/index.d.ts",
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/passport-twitter/index.d.ts",
         "./node_modules/@types/passport/index.d.ts",
         "./src/authentication-strategies/types.ts",
         "./src/models/index.ts",
@@ -7283,6 +7354,10 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
+      "./node_modules/@loopback/rest/node_modules/path-to-regexp/dist/index.d.ts": [
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
       "./node_modules/@loopback/security/dist/index.d.ts": [
         "./node_modules/@loopback/security/dist/keys.d.ts",
         "./node_modules/@loopback/security/dist/types.d.ts",
@@ -8040,6 +8115,12 @@
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/passport/index.d.ts"
       ],
+      "./node_modules/@types/passport-twitter/index.d.ts": [
+        "./node_modules/@types/express/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/passport/index.d.ts"
+      ],
       "./node_modules/@types/passport/index.d.ts": [
         "./node_modules/@types/express/index.d.ts",
         "./node_modules/@types/node/http.d.ts",
@@ -8248,10 +8329,6 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
-      "./node_modules/path-to-regexp/dist/index.d.ts": [
-        "./node_modules/@types/node/ts3.2/util.d.ts",
-        "./node_modules/@types/node/util.d.ts"
-      ],
       "./node_modules/reflect-metadata/index.d.ts": [
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
@@ -8434,6 +8511,7 @@
         "./src/authentication-interceptors/linkedin.interceptor.ts",
         "./src/authentication-interceptors/oauth2.interceptor.ts",
         "./src/authentication-interceptors/session.interceptor.ts",
+        "./src/authentication-interceptors/twitter.interceptor.ts",
         "./src/authentication-interceptors/types.ts"
       ],
       "./src/authentication-interceptors/linkedin.interceptor.ts": [
@@ -8446,6 +8524,10 @@
       ],
       "./src/authentication-interceptors/session.interceptor.ts": [
         "./node_modules/@loopback/core/dist/index.d.ts"
+      ],
+      "./src/authentication-interceptors/twitter.interceptor.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@loopback/rest/dist/index.d.ts"
       ],
       "./src/authentication-strategies/basic.ts": [
         "./node_modules/@loopback/authentication-passport/dist/index.d.ts",
@@ -8480,6 +8562,7 @@
         "./src/authentication-strategies/local.ts",
         "./src/authentication-strategies/oauth2.ts",
         "./src/authentication-strategies/session.ts",
+        "./src/authentication-strategies/twitter.ts",
         "./src/authentication-strategies/types.ts"
       ],
       "./src/authentication-strategies/linkedin.ts": [
@@ -8513,6 +8596,14 @@
         "./node_modules/@loopback/rest/dist/index.d.ts",
         "./node_modules/@loopback/security/dist/index.d.ts",
         "./src/repositories/index.ts"
+      ],
+      "./src/authentication-strategies/twitter.ts": [
+        "./node_modules/@loopback/authentication-passport/dist/index.d.ts",
+        "./node_modules/@loopback/authentication/dist/index.d.ts",
+        "./node_modules/@loopback/rest/dist/index.d.ts",
+        "./node_modules/@loopback/security/dist/index.d.ts",
+        "./node_modules/@types/passport-twitter/index.d.ts",
+        "./src/models/index.ts"
       ],
       "./src/authentication-strategies/types.ts": [
         "./node_modules/@loopback/authentication/dist/index.d.ts",
@@ -8553,7 +8644,9 @@
         "./src/authentication-strategy-providers/linkedin.express-mw.ts",
         "./src/authentication-strategy-providers/linkedin.ts",
         "./src/authentication-strategy-providers/oauth2.express-mw.ts",
-        "./src/authentication-strategy-providers/oauth2.ts"
+        "./src/authentication-strategy-providers/oauth2.ts",
+        "./src/authentication-strategy-providers/twitter.express-mw.ts",
+        "./src/authentication-strategy-providers/twitter.ts"
       ],
       "./src/authentication-strategy-providers/linkedin.express-mw.ts": [
         "./node_modules/@loopback/core/dist/index.d.ts",
@@ -8578,6 +8671,18 @@
         "./node_modules/@types/passport-oauth2/index.d.ts",
         "./node_modules/@types/passport/index.d.ts",
         "./src/authentication-strategies/types.ts",
+        "./src/models/index.ts"
+      ],
+      "./src/authentication-strategy-providers/twitter.express-mw.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@loopback/rest/dist/index.d.ts",
+        "./node_modules/@types/passport-twitter/index.d.ts"
+      ],
+      "./src/authentication-strategy-providers/twitter.ts": [
+        "./node_modules/@loopback/authentication/dist/index.d.ts",
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@types/passport-twitter/index.d.ts",
+        "./node_modules/@types/passport/index.d.ts",
         "./src/models/index.ts"
       ],
       "./src/controllers/index.ts": [
@@ -8909,6 +9014,7 @@
       "./node_modules/@loopback/rest/dist/types.d.ts",
       "./node_modules/@loopback/rest/dist/validation/request-body.validator.d.ts",
       "./node_modules/@loopback/rest/dist/writer.d.ts",
+      "./node_modules/@loopback/rest/node_modules/path-to-regexp/dist/index.d.ts",
       "./node_modules/@loopback/security/dist/index.d.ts",
       "./node_modules/@loopback/security/dist/keys.d.ts",
       "./node_modules/@loopback/security/dist/types.d.ts",
@@ -9016,6 +9122,7 @@
       "./node_modules/@types/passport-local/index.d.ts",
       "./node_modules/@types/passport-oauth2/index.d.ts",
       "./node_modules/@types/passport-strategy/index.d.ts",
+      "./node_modules/@types/passport-twitter/index.d.ts",
       "./node_modules/@types/passport/index.d.ts",
       "./node_modules/@types/qs/index.d.ts",
       "./node_modules/@types/range-parser/index.d.ts",
@@ -9050,7 +9157,6 @@
       "./node_modules/openapi3-ts/dist/model/openapi.d.ts",
       "./node_modules/openapi3-ts/dist/model/server.d.ts",
       "./node_modules/openapi3-ts/dist/model/specificationextension.d.ts",
-      "./node_modules/path-to-regexp/dist/index.d.ts",
       "./node_modules/reflect-metadata/index.d.ts",
       "./node_modules/strong-error-handler/index.d.ts",
       "./node_modules/tslib/tslib.d.ts",
@@ -9099,6 +9205,7 @@
       "./src/authentication-interceptors/linkedin.interceptor.ts",
       "./src/authentication-interceptors/oauth2.interceptor.ts",
       "./src/authentication-interceptors/session.interceptor.ts",
+      "./src/authentication-interceptors/twitter.interceptor.ts",
       "./src/authentication-interceptors/types.ts",
       "./src/authentication-strategies/basic.ts",
       "./src/authentication-strategies/facebook.ts",
@@ -9108,6 +9215,7 @@
       "./src/authentication-strategies/local.ts",
       "./src/authentication-strategies/oauth2.ts",
       "./src/authentication-strategies/session.ts",
+      "./src/authentication-strategies/twitter.ts",
       "./src/authentication-strategies/types.ts",
       "./src/authentication-strategy-providers/facebook.express-mw.ts",
       "./src/authentication-strategy-providers/facebook.ts",
@@ -9118,6 +9226,8 @@
       "./src/authentication-strategy-providers/linkedin.ts",
       "./src/authentication-strategy-providers/oauth2.express-mw.ts",
       "./src/authentication-strategy-providers/oauth2.ts",
+      "./src/authentication-strategy-providers/twitter.express-mw.ts",
+      "./src/authentication-strategy-providers/twitter.ts",
       "./src/controllers/index.ts",
       "./src/controllers/oauth2.controller.ts",
       "./src/controllers/ping.controller.ts",

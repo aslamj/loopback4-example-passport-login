@@ -9,3 +9,4 @@ export * from './session.interceptor';
 export * from './facebook.interceptor';
 export * from './google.interceptor';
 export * from './linkedin.interceptor';
+export * from './twitter.interceptor';

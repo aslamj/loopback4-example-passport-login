@@ -43,6 +43,20 @@ module.exports = {
         "state": true,
         "failureFlash": true
     },
+    "twitter-login": {
+        "provider": "twitter",
+        "module": "passport-twitter",
+        "strategy": "OAuth2Strategy",
+        "consumerKey": process.env.twitter_client_id,
+        "consumerSecret": process.env.twitter_client_secret,
+        "callbackURL": "/api/auth/thirdparty/twitter/callback",
+        "authPath": "/api/auth/thirdparty/twitter",
+        "callbackPath": "/api/auth/thirdparty/twitter/callback",
+        "successRedirect": "/auth/account",
+        "failureRedirect": "/login",
+        "includeEmail": true,
+        "failureFlash": true
+    },
     "oauth2": {
         "provider": "oauth2",
         "module": "passport-oauth2",
