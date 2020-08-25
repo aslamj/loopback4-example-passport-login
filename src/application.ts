@@ -13,6 +13,7 @@ import {
   FaceBookOauth2Authorization,
   GoogleOauth2Authorization,
   LinkedinOauth2Authorization,
+  GithubOauth2Authorization,
   TwitterOauth2Authorization,
   Oauth2AuthStrategy,
   LocalAuthStrategy,
@@ -23,11 +24,13 @@ import {
   FacebookOauth,
   GoogleOauth,
   LinkedinOauth,
+  GithubOauth,
   TwitterOauth,
   CustomOauth2,
   FacebookOauth2ExpressMiddleware,
   GoogleOauth2ExpressMiddleware,
   LinkedinOauth2ExpressMiddleware,
+  GithubOauth2ExpressMiddleware,
   TwitterOauth2ExpressMiddleware,
   CustomOauth2ExpressMiddleware,
 } from './authentication-strategy-providers';
@@ -36,6 +39,7 @@ import {
   FacebookOauthInterceptor,
   GoogleOauthInterceptor,
   LinkedinOauthInterceptor,
+  GithubOauthInterceptor,
   TwitterOauthInterceptor,
   CustomOauth2Interceptor,
 } from './authentication-interceptors';
@@ -88,6 +92,7 @@ export class OAuth2LoginApplication extends BootMixin(
     this.add(createBindingFromClass(GoogleOauth, {key: 'googleStrategy'}));
     this.add(createBindingFromClass(LinkedinOauth, {key: 'linkedinStrategy'}));
     this.add(createBindingFromClass(TwitterOauth, {key: 'twitterStrategy'}));
+    this.add(createBindingFromClass(GithubOauth, {key: 'githubStrategy'}));
     this.add(createBindingFromClass(CustomOauth2, {key: 'oauth2Strategy'}));
     // passport express middleware
     this.add(
@@ -106,6 +111,11 @@ export class OAuth2LoginApplication extends BootMixin(
       }),
     );
     this.add(
+      createBindingFromClass(GithubOauth2ExpressMiddleware, {
+        key: 'githubStrategyMiddleware',
+      }),
+    );
+    this.add(
       createBindingFromClass(TwitterOauth2ExpressMiddleware, {
         key: 'twitterStrategyMiddleware',
       }),
@@ -120,6 +130,7 @@ export class OAuth2LoginApplication extends BootMixin(
     this.add(createBindingFromClass(FaceBookOauth2Authorization));
     this.add(createBindingFromClass(GoogleOauth2Authorization));
     this.add(createBindingFromClass(LinkedinOauth2Authorization));
+    this.add(createBindingFromClass(GithubOauth2Authorization));
     this.add(createBindingFromClass(TwitterOauth2Authorization));
     this.add(createBindingFromClass(Oauth2AuthStrategy));
     this.add(createBindingFromClass(SessionStrategy));
@@ -130,6 +141,7 @@ export class OAuth2LoginApplication extends BootMixin(
     this.bind('passport-facebook').toProvider(FacebookOauthInterceptor);
     this.bind('passport-google').toProvider(GoogleOauthInterceptor);
     this.bind('passport-linkedin').toProvider(LinkedinOauthInterceptor);
+    this.bind('passport-github').toProvider(GithubOauthInterceptor);
     this.bind('passport-twitter').toProvider(TwitterOauthInterceptor);
     this.bind('passport-oauth2').toProvider(CustomOauth2Interceptor);
     this.bind('set-session-user').toProvider(SessionAuth);

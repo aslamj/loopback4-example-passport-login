@@ -57,6 +57,20 @@ module.exports = {
         "includeEmail": true,
         "failureFlash": true
     },
+    "github-login": {
+        "provider": "github",
+        "module": "passport-github2",
+        "strategy": "OAuth2Strategy",
+        "clientID": process.env.github_client_id,
+        "clientSecret": process.env.github_client_secret,
+        "callbackURL": "/api/auth/thirdparty/github/callback",
+        "authPath": "/api/auth/thirdparty/github",
+        "callbackPath": "/api/auth/thirdparty/github/callback",
+        "successRedirect": "/auth/account",
+        "failureRedirect": "/login",
+        "scope": ["user:email"],
+        "failureFlash": true
+    },
     "oauth2": {
         "provider": "oauth2",
         "module": "passport-oauth2",

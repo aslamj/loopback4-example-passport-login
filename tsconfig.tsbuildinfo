@@ -1861,6 +1861,16 @@
         "signature": "f5a2096bbd5271c1838a6b452dd47c6f0fa5e696cf8931f77a078dffcfdc57e5",
         "affectsGlobalScope": false
       },
+      "./node_modules/@types/passport-github2/index.d.ts": {
+        "version": "237737aea983d4f8050fb13cf7cb51819cf0f298d4c152abde4eccd834ef310b",
+        "signature": "237737aea983d4f8050fb13cf7cb51819cf0f298d4c152abde4eccd834ef310b",
+        "affectsGlobalScope": false
+      },
+      "./src/authentication-strategies/github.ts": {
+        "version": "618c50637f3e23340112748d1de99461f4bbf4eb959992287f7a2ac4587a89d2",
+        "signature": "52c990b30d58eeeb850736c4587210c98a62c61216ea4b62dd5eb1be412ca550",
+        "affectsGlobalScope": false
+      },
       "./node_modules/@types/passport-strategy/index.d.ts": {
         "version": "29d59e921bc723594bbfc98230d24f38f0d5a669f28fcf989b7468f4f95b7c52",
         "signature": "29d59e921bc723594bbfc98230d24f38f0d5a669f28fcf989b7468f4f95b7c52",
@@ -1922,8 +1932,8 @@
         "affectsGlobalScope": false
       },
       "./src/authentication-strategies/index.ts": {
-        "version": "bda3e4b1b1c5ed9e6ebeb53886e53078f712852897f3fefb5f5e2afbc9631e8a",
-        "signature": "3aabd25cc2fdd4cecefef1b8b567e86a0cfb0ea6bfd13224f36251057336b60d",
+        "version": "c89213bac26c66901fe62618e152ca752381e49e0fe90b783c3477ca924b29f4",
+        "signature": "0b1616a247d851e7f0e2a76bf28cfbc064ad9f69b9ede80b725c67662ddf437f",
         "affectsGlobalScope": false
       },
       "./src/services/user.service.ts": {
@@ -1954,6 +1964,11 @@
       "./src/authentication-strategy-providers/linkedin.ts": {
         "version": "55b5a2e9c927a11de9889418ab226bfce685433e0378d941edd1072f85697df4",
         "signature": "36ca0275d05105576f16dbae46dd8b9f6f25007f994a3fc99ffac7080d6b632a",
+        "affectsGlobalScope": false
+      },
+      "./src/authentication-strategy-providers/github.ts": {
+        "version": "03eddeaeaa4ffe6d1a2d028e948559af640c926d385275dd77b790942fe69b8c",
+        "signature": "98cbf38e6ab5c5dfecedb73edc370a65f2ab96d91f5b5f1efd94eb50eecddbb2",
         "affectsGlobalScope": false
       },
       "./src/authentication-strategy-providers/twitter.ts": {
@@ -1991,13 +2006,18 @@
         "signature": "26dfdb7cbb8446a52ad88eb9cce4d5630ffbe1dddde0e274958e4be95f7245e0",
         "affectsGlobalScope": false
       },
+      "./src/authentication-strategy-providers/github.express-mw.ts": {
+        "version": "68d83439e927ecc842d9b555b237b522fc672157fd10d7dfe0d545e46a8f3d0e",
+        "signature": "d01cc81ea2998cedfd3e087a38cc663fe34cd730634d4b6fbdb7668eb832bd81",
+        "affectsGlobalScope": false
+      },
       "./src/authentication-strategy-providers/index.ts": {
-        "version": "55f9e10eabc3f1f703269f6a5e7692ee8c5c32a7d77b59888cc38a6b215bf615",
-        "signature": "faf4f8d1827994551626e32ea99a6c4eaa228d3436ec0de052428952c6fc9116",
+        "version": "b1944425b0d6f2a98b0fd1b3538c59fd0abbf8035e562890dd083ca4a35e3488",
+        "signature": "612624ce93208d7398f38ea14898053d2c9a520a0a71f20f21982afedc7dc59d",
         "affectsGlobalScope": false
       },
       "./src/authentication-interceptors/types.ts": {
-        "version": "e7f2d5eff15042127946d4b72a9c1b5d08fc3928c04a4a24beded89d2ddf4f2f",
+        "version": "b7b3adab313846a1a8326088c7e13dabe9f6f64386f2a09e6dbb0e2b0c622366",
         "signature": "0627700a91c92a6959ef0af78a66a7e8f22913f78e54c64e3b0a4af926a9d53f",
         "affectsGlobalScope": false
       },
@@ -2031,9 +2051,14 @@
         "signature": "51dbfee5d52833d67b344908962c388282b1e09c9862daa0c22ff63c4aead8ec",
         "affectsGlobalScope": false
       },
+      "./src/authentication-interceptors/github.interceptor.ts": {
+        "version": "187a666280a42631fb5f811a0ff8b0ae5ea7365a65e3e525db7702ef2b426afd",
+        "signature": "6622a6121f406dc9df07a46e078b02800355591d28922642d35f9972cc180f71",
+        "affectsGlobalScope": false
+      },
       "./src/authentication-interceptors/index.ts": {
-        "version": "ac29603ed4300f7228f3e75b59567b6a6698c843b5e1444aed778177182e0e6f",
-        "signature": "d6b80436841a3ebd84c82830f1974ade24652d640161f449ea3c2af62a4ba8be",
+        "version": "3d3c8ecd6068e6c376d4ea2b3023d48b95531ecd0169e403ce9c6839fbdfe73e",
+        "signature": "bd5c5a972f75b4b290a0cd3d60ab7d516aa040cdbd287c6dfcbcf07c4ff9cae9",
         "affectsGlobalScope": false
       },
       "./node_modules/@loopback/rest-crud/dist/crud-rest.api-builder.d.ts": {
@@ -2057,17 +2082,17 @@
         "affectsGlobalScope": false
       },
       "./src/application.ts": {
-        "version": "ba3044acca12e222b2c312341aa9fbb94a97f13d8eed9f27641d32f438eb5d0a",
+        "version": "49aa151feabcc4b774f0c17f4ac6c6ae66430be04ecb26bfcc81225df87c60a9",
         "signature": "d8b9640f13b7790678ae368eb45f10b27d8cc99d46747edd6050966007cbb1c1",
         "affectsGlobalScope": false
       },
       "./src/server.ts": {
-        "version": "a869c25fa8b6ce5288652778a9419f90094499a45e1db7d301f40e521770583c",
+        "version": "2abf4b0da383523b739a88810f677e5eec64fef3734f92f2b5a3c1ef4f9c959a",
         "signature": "250382f0ce61099de98acc49009f1fc7102219e7ad96ee88eb5acd94dc57eba7",
         "affectsGlobalScope": false
       },
       "./src/index.ts": {
-        "version": "9b8f7133f17ea08a39240d23d7cc783fa6d583e3ea122c3a384210fed8cc5813",
+        "version": "4d78aaff662b6cdb7c1483a4e5a0bbbe27847b7bb0429c4a0ae9fcd87ef53b3d",
         "signature": "51ae3c1154405cebd1223923bf9567118a0959e9a1dace8121d45f50a1ca959b",
         "affectsGlobalScope": false
       },
@@ -4766,6 +4791,14 @@
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/passport/index.d.ts"
       ],
+      "./node_modules/@types/passport-github2/index.d.ts": [
+        "./node_modules/@types/express/index.d.ts",
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/passport-oauth2/index.d.ts",
+        "./node_modules/@types/passport/index.d.ts"
+      ],
       "./node_modules/@types/passport-google-oauth/index.d.ts": [
         "./node_modules/@types/express/index.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
@@ -5220,6 +5253,12 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
+      "./src/authentication-interceptors/github.interceptor.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@loopback/rest/dist/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
       "./src/authentication-interceptors/google.interceptor.ts": [
         "./node_modules/@loopback/core/dist/index.d.ts",
         "./node_modules/@loopback/rest/dist/index.d.ts",
@@ -5230,6 +5269,7 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts",
         "./src/authentication-interceptors/facebook.interceptor.ts",
+        "./src/authentication-interceptors/github.interceptor.ts",
         "./src/authentication-interceptors/google.interceptor.ts",
         "./src/authentication-interceptors/linkedin.interceptor.ts",
         "./src/authentication-interceptors/oauth2.interceptor.ts",
@@ -5295,6 +5335,18 @@
         "./src/authentication-strategies/types.ts",
         "./src/models/index.ts"
       ],
+      "./src/authentication-strategies/github.ts": [
+        "./node_modules/@loopback/authentication-passport/dist/index.d.ts",
+        "./node_modules/@loopback/authentication/dist/index.d.ts",
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@loopback/rest/dist/index.d.ts",
+        "./node_modules/@loopback/security/dist/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/passport-github2/index.d.ts",
+        "./src/authentication-strategies/types.ts",
+        "./src/models/index.ts"
+      ],
       "./src/authentication-strategies/google.ts": [
         "./node_modules/@loopback/authentication-passport/dist/index.d.ts",
         "./node_modules/@loopback/authentication/dist/index.d.ts",
@@ -5312,6 +5364,7 @@
         "./node_modules/@types/node/util.d.ts",
         "./src/authentication-strategies/basic.ts",
         "./src/authentication-strategies/facebook.ts",
+        "./src/authentication-strategies/github.ts",
         "./src/authentication-strategies/google.ts",
         "./src/authentication-strategies/linkedin.ts",
         "./src/authentication-strategies/local.ts",
@@ -5408,6 +5461,24 @@
         "./src/models/index.ts",
         "./src/services/index.ts"
       ],
+      "./src/authentication-strategy-providers/github.express-mw.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@loopback/rest/dist/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/passport-github2/index.d.ts"
+      ],
+      "./src/authentication-strategy-providers/github.ts": [
+        "./node_modules/@loopback/authentication/dist/index.d.ts",
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/passport-github2/index.d.ts",
+        "./node_modules/@types/passport/index.d.ts",
+        "./src/authentication-strategies/types.ts",
+        "./src/models/index.ts",
+        "./src/services/index.ts"
+      ],
       "./src/authentication-strategy-providers/google.express-mw.ts": [
         "./node_modules/@loopback/core/dist/index.d.ts",
         "./node_modules/@loopback/rest/dist/index.d.ts",
@@ -5432,6 +5503,8 @@
         "./node_modules/@types/node/util.d.ts",
         "./src/authentication-strategy-providers/facebook.express-mw.ts",
         "./src/authentication-strategy-providers/facebook.ts",
+        "./src/authentication-strategy-providers/github.express-mw.ts",
+        "./src/authentication-strategy-providers/github.ts",
         "./src/authentication-strategy-providers/google.express-mw.ts",
         "./src/authentication-strategy-providers/google.ts",
         "./src/authentication-strategy-providers/linkedin.express-mw.ts",
@@ -8071,6 +8144,14 @@
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/passport/index.d.ts"
       ],
+      "./node_modules/@types/passport-github2/index.d.ts": [
+        "./node_modules/@types/express/index.d.ts",
+        "./node_modules/@types/node/http.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts",
+        "./node_modules/@types/passport-oauth2/index.d.ts",
+        "./node_modules/@types/passport/index.d.ts"
+      ],
       "./node_modules/@types/passport-google-oauth/index.d.ts": [
         "./node_modules/@types/express/index.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
@@ -8501,12 +8582,17 @@
         "./node_modules/@loopback/core/dist/index.d.ts",
         "./node_modules/@loopback/rest/dist/index.d.ts"
       ],
+      "./src/authentication-interceptors/github.interceptor.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@loopback/rest/dist/index.d.ts"
+      ],
       "./src/authentication-interceptors/google.interceptor.ts": [
         "./node_modules/@loopback/core/dist/index.d.ts",
         "./node_modules/@loopback/rest/dist/index.d.ts"
       ],
       "./src/authentication-interceptors/index.ts": [
         "./src/authentication-interceptors/facebook.interceptor.ts",
+        "./src/authentication-interceptors/github.interceptor.ts",
         "./src/authentication-interceptors/google.interceptor.ts",
         "./src/authentication-interceptors/linkedin.interceptor.ts",
         "./src/authentication-interceptors/oauth2.interceptor.ts",
@@ -8546,6 +8632,14 @@
         "./node_modules/@types/passport-facebook/index.d.ts",
         "./src/models/index.ts"
       ],
+      "./src/authentication-strategies/github.ts": [
+        "./node_modules/@loopback/authentication-passport/dist/index.d.ts",
+        "./node_modules/@loopback/authentication/dist/index.d.ts",
+        "./node_modules/@loopback/rest/dist/index.d.ts",
+        "./node_modules/@loopback/security/dist/index.d.ts",
+        "./node_modules/@types/passport-github2/index.d.ts",
+        "./src/models/index.ts"
+      ],
       "./src/authentication-strategies/google.ts": [
         "./node_modules/@loopback/authentication-passport/dist/index.d.ts",
         "./node_modules/@loopback/authentication/dist/index.d.ts",
@@ -8557,6 +8651,7 @@
       "./src/authentication-strategies/index.ts": [
         "./src/authentication-strategies/basic.ts",
         "./src/authentication-strategies/facebook.ts",
+        "./src/authentication-strategies/github.ts",
         "./src/authentication-strategies/google.ts",
         "./src/authentication-strategies/linkedin.ts",
         "./src/authentication-strategies/local.ts",
@@ -8623,6 +8718,18 @@
         "./node_modules/@types/passport/index.d.ts",
         "./src/models/index.ts"
       ],
+      "./src/authentication-strategy-providers/github.express-mw.ts": [
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@loopback/rest/dist/index.d.ts",
+        "./node_modules/@types/passport-github2/index.d.ts"
+      ],
+      "./src/authentication-strategy-providers/github.ts": [
+        "./node_modules/@loopback/authentication/dist/index.d.ts",
+        "./node_modules/@loopback/core/dist/index.d.ts",
+        "./node_modules/@types/passport-github2/index.d.ts",
+        "./node_modules/@types/passport/index.d.ts",
+        "./src/models/index.ts"
+      ],
       "./src/authentication-strategy-providers/google.express-mw.ts": [
         "./node_modules/@loopback/core/dist/index.d.ts",
         "./node_modules/@loopback/rest/dist/index.d.ts",
@@ -8639,6 +8746,8 @@
       "./src/authentication-strategy-providers/index.ts": [
         "./src/authentication-strategy-providers/facebook.express-mw.ts",
         "./src/authentication-strategy-providers/facebook.ts",
+        "./src/authentication-strategy-providers/github.express-mw.ts",
+        "./src/authentication-strategy-providers/github.ts",
         "./src/authentication-strategy-providers/google.express-mw.ts",
         "./src/authentication-strategy-providers/google.ts",
         "./src/authentication-strategy-providers/linkedin.express-mw.ts",
@@ -9115,6 +9224,7 @@
       "./node_modules/@types/oauth/index.d.ts",
       "./node_modules/@types/on-finished/index.d.ts",
       "./node_modules/@types/passport-facebook/index.d.ts",
+      "./node_modules/@types/passport-github2/index.d.ts",
       "./node_modules/@types/passport-google-oauth/index.d.ts",
       "./node_modules/@types/passport-google-oauth2/index.d.ts",
       "./node_modules/@types/passport-http/index.d.ts",
@@ -9200,6 +9310,7 @@
       "./src/__tests__/acceptance/passport-login.acceptance.ts",
       "./src/application.ts",
       "./src/authentication-interceptors/facebook.interceptor.ts",
+      "./src/authentication-interceptors/github.interceptor.ts",
       "./src/authentication-interceptors/google.interceptor.ts",
       "./src/authentication-interceptors/index.ts",
       "./src/authentication-interceptors/linkedin.interceptor.ts",
@@ -9209,6 +9320,7 @@
       "./src/authentication-interceptors/types.ts",
       "./src/authentication-strategies/basic.ts",
       "./src/authentication-strategies/facebook.ts",
+      "./src/authentication-strategies/github.ts",
       "./src/authentication-strategies/google.ts",
       "./src/authentication-strategies/index.ts",
       "./src/authentication-strategies/linkedin.ts",
@@ -9219,6 +9331,8 @@
       "./src/authentication-strategies/types.ts",
       "./src/authentication-strategy-providers/facebook.express-mw.ts",
       "./src/authentication-strategy-providers/facebook.ts",
+      "./src/authentication-strategy-providers/github.express-mw.ts",
+      "./src/authentication-strategy-providers/github.ts",
       "./src/authentication-strategy-providers/google.express-mw.ts",
       "./src/authentication-strategy-providers/google.ts",
       "./src/authentication-strategy-providers/index.ts",

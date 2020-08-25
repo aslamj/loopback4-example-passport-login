@@ -10,3 +10,4 @@ export * from './facebook.interceptor';
 export * from './google.interceptor';
 export * from './linkedin.interceptor';
 export * from './twitter.interceptor';
+export * from './github.interceptor';

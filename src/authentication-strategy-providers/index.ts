@@ -6,6 +6,7 @@
 export * from './facebook';
 export * from './google';
 export * from './linkedin';
+export * from './github';
 export * from './twitter';
 export * from './oauth2';
 export * from './facebook.express-mw';
@@ -13,3 +14,4 @@ export * from './google.express-mw';
 export * from './linkedin.express-mw';
 export * from './oauth2.express-mw';
 export * from './twitter.express-mw';
+export * from './github.express-mw';
