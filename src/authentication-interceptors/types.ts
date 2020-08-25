@@ -23,6 +23,7 @@ export function oAuth2InterceptExpressMiddleware() {
       'passport-init-mw',
       'passport-session-mw',
       'passport-facebook',
+      'passport-linkedin',
       'passport-oauth2',
       'passport-google',
       'set-session-user',

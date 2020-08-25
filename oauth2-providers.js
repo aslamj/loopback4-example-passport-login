@@ -28,6 +28,21 @@ module.exports = {
         "scope": ["email", "profile"],
         "failureFlash": true
     },
+    "linkedin-login": {
+        "provider": "linkedin",
+        "module": "passport-linkedin-oauth2",
+        "strategy": "OAuth2Strategy",
+        "clientID": process.env.linkedin_client_id,
+        "clientSecret": process.env.linkedin_client_secret,
+        "callbackURL": "/api/auth/thirdparty/linkedin/callback",
+        "authPath": "/api/auth/thirdparty/linkedin",
+        "callbackPath": "/api/auth/thirdparty/linkedin/callback",
+        "successRedirect": "/auth/account",
+        "failureRedirect": "/login",
+        "scope": ["r_emailaddress", "r_liteprofile"],
+        "state": true,
+        "failureFlash": true
+    },
     "oauth2": {
         "provider": "oauth2",
         "module": "passport-oauth2",

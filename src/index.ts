@@ -32,6 +32,7 @@ export async function serverConfig(
     },
     facebookOptions: oauth2Providers['facebook-login'],
     googleOptions: oauth2Providers['google-login'],
+    linkedinOptions: oauth2Providers['linkedin-login'],
     oauth2Options: oauth2Providers['oauth2'],
   };
   return config;

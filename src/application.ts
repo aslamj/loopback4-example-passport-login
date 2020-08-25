@@ -12,6 +12,7 @@ import {AuthenticationComponent} from '@loopback/authentication';
 import {
   FaceBookOauth2Authorization,
   GoogleOauth2Authorization,
+  LinkedinOauth2Authorization,
   Oauth2AuthStrategy,
   LocalAuthStrategy,
   SessionStrategy,
@@ -20,15 +21,18 @@ import {
 import {
   FacebookOauth,
   GoogleOauth,
+  LinkedinOauth,
   CustomOauth2,
   FacebookOauth2ExpressMiddleware,
   GoogleOauth2ExpressMiddleware,
+  LinkedinOauth2ExpressMiddleware,
   CustomOauth2ExpressMiddleware,
 } from './authentication-strategy-providers';
 import {
   SessionAuth,
   FacebookOauthInterceptor,
   GoogleOauthInterceptor,
+  LinkedinOauthInterceptor,
   CustomOauth2Interceptor,
 } from './authentication-interceptors';
 import {PassportUserIdentityService, UserServiceBindings} from './services';
@@ -78,6 +82,7 @@ export class OAuth2LoginApplication extends BootMixin(
     // passport strategies
     this.add(createBindingFromClass(FacebookOauth, {key: 'facebookStrategy'}));
     this.add(createBindingFromClass(GoogleOauth, {key: 'googleStrategy'}));
+    this.add(createBindingFromClass(LinkedinOauth, {key: 'linkedinStrategy'}));
     this.add(createBindingFromClass(CustomOauth2, {key: 'oauth2Strategy'}));
     // passport express middleware
     this.add(
@@ -91,6 +96,11 @@ export class OAuth2LoginApplication extends BootMixin(
       }),
     );
     this.add(
+      createBindingFromClass(LinkedinOauth2ExpressMiddleware, {
+        key: 'linkedinStrategyMiddleware',
+      }),
+    );
+    this.add(
       createBindingFromClass(CustomOauth2ExpressMiddleware, {
         key: 'oauth2StrategyMiddleware',
       }),
@@ -99,6 +109,7 @@ export class OAuth2LoginApplication extends BootMixin(
     this.add(createBindingFromClass(LocalAuthStrategy));
     this.add(createBindingFromClass(FaceBookOauth2Authorization));
     this.add(createBindingFromClass(GoogleOauth2Authorization));
+    this.add(createBindingFromClass(LinkedinOauth2Authorization));
     this.add(createBindingFromClass(Oauth2AuthStrategy));
     this.add(createBindingFromClass(SessionStrategy));
     this.add(createBindingFromClass(BasicStrategy));
@@ -107,6 +118,7 @@ export class OAuth2LoginApplication extends BootMixin(
     this.bind('passport-session-mw').to(toInterceptor(passport.session()));
     this.bind('passport-facebook').toProvider(FacebookOauthInterceptor);
     this.bind('passport-google').toProvider(GoogleOauthInterceptor);
+    this.bind('passport-linkedin').toProvider(LinkedinOauthInterceptor);
     this.bind('passport-oauth2').toProvider(CustomOauth2Interceptor);
     this.bind('set-session-user').toProvider(SessionAuth);
   }

@@ -43,6 +43,7 @@ export class ExpressServer {
      */
     this.lbApp.bind('facebookOAuth2Options').to(options.facebookOptions);
     this.lbApp.bind('googleOAuth2Options').to(options.googleOptions);
+    this.lbApp.bind('linkedinOAuth2Options').to(options.linkedinOptions);
     this.lbApp.bind('customOAuth2Options').to(options.oauth2Options);
 
     // Serve static files in the public folder
