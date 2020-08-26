@@ -35,6 +35,7 @@ export async function serverConfig(
     linkedinOptions: oauth2Providers['linkedin-login'],
     twitterOptions: oauth2Providers['twitter-login'],
     githubOptions: oauth2Providers['github-login'],
+    microsoftOptions: oauth2Providers['microsoft-login'],
     oauth2Options: oauth2Providers['oauth2'],
   };
   return config;

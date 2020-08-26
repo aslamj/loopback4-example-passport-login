@@ -9,6 +9,7 @@ export * from './google';
 export * from './linkedin';
 export * from './twitter';
 export * from './github';
+export * from './microsoft';
 export * from './local';
 export * from './types';
 export * from './session';

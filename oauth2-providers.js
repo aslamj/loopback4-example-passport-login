@@ -71,6 +71,19 @@ module.exports = {
         "scope": ["user:email"],
         "failureFlash": true
     },
+    "microsoft-login": {
+        "provider": "microsoft",
+        "module": "passport-microsoft",
+        "strategy": "OAuth2Strategy",
+        "clientID": process.env.microsoft_client_id,
+        "clientSecret": process.env.microsoft_client_secret,
+        "callbackURL": "/api/auth/thirdparty/microsoft/callback",
+        "authPath": "/api/auth/thirdparty/microsoft",
+        "callbackPath": "/api/auth/thirdparty/microsoft/callback",
+        "successRedirect": "/auth/account",
+        "failureRedirect": "/login",
+        "scope": ["openid", "profile", "user.read"]
+    },
     "oauth2": {
         "provider": "oauth2",
         "module": "passport-oauth2",

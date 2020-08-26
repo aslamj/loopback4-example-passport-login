@@ -11,3 +11,4 @@ export * from './google.interceptor';
 export * from './linkedin.interceptor';
 export * from './twitter.interceptor';
 export * from './github.interceptor';
+export * from './microsoft.interceptor';

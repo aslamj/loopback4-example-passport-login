@@ -15,6 +15,7 @@ import {
   LinkedinOauth2Authorization,
   GithubOauth2Authorization,
   TwitterOauth2Authorization,
+  MicrosoftOauth2Authorization,
   Oauth2AuthStrategy,
   LocalAuthStrategy,
   SessionStrategy,
@@ -26,12 +27,14 @@ import {
   LinkedinOauth,
   GithubOauth,
   TwitterOauth,
+  MicrosoftOauth,
   CustomOauth2,
   FacebookOauth2ExpressMiddleware,
   GoogleOauth2ExpressMiddleware,
   LinkedinOauth2ExpressMiddleware,
   GithubOauth2ExpressMiddleware,
   TwitterOauth2ExpressMiddleware,
+  MicrosoftOauth2ExpressMiddleware,
   CustomOauth2ExpressMiddleware,
 } from './authentication-strategy-providers';
 import {
@@ -41,6 +44,7 @@ import {
   LinkedinOauthInterceptor,
   GithubOauthInterceptor,
   TwitterOauthInterceptor,
+  MicrosoftOauthInterceptor,
   CustomOauth2Interceptor,
 } from './authentication-interceptors';
 import {PassportUserIdentityService, UserServiceBindings} from './services';
@@ -92,6 +96,7 @@ export class OAuth2LoginApplication extends BootMixin(
     this.add(createBindingFromClass(GoogleOauth, {key: 'googleStrategy'}));
     this.add(createBindingFromClass(LinkedinOauth, {key: 'linkedinStrategy'}));
     this.add(createBindingFromClass(TwitterOauth, {key: 'twitterStrategy'}));
+    this.add(createBindingFromClass(MicrosoftOauth, {key: 'microsoftStrategy'}));
     this.add(createBindingFromClass(GithubOauth, {key: 'githubStrategy'}));
     this.add(createBindingFromClass(CustomOauth2, {key: 'oauth2Strategy'}));
     // passport express middleware
@@ -121,6 +126,11 @@ export class OAuth2LoginApplication extends BootMixin(
       }),
     );
     this.add(
+      createBindingFromClass(MicrosoftOauth2ExpressMiddleware, {
+        key: 'microsoftStrategyMiddleware',
+      }),
+    );
+    this.add(
       createBindingFromClass(CustomOauth2ExpressMiddleware, {
         key: 'oauth2StrategyMiddleware',
       }),
@@ -132,6 +142,7 @@ export class OAuth2LoginApplication extends BootMixin(
     this.add(createBindingFromClass(LinkedinOauth2Authorization));
     this.add(createBindingFromClass(GithubOauth2Authorization));
     this.add(createBindingFromClass(TwitterOauth2Authorization));
+    this.add(createBindingFromClass(MicrosoftOauth2Authorization));
     this.add(createBindingFromClass(Oauth2AuthStrategy));
     this.add(createBindingFromClass(SessionStrategy));
     this.add(createBindingFromClass(BasicStrategy));
@@ -143,6 +154,7 @@ export class OAuth2LoginApplication extends BootMixin(
     this.bind('passport-linkedin').toProvider(LinkedinOauthInterceptor);
     this.bind('passport-github').toProvider(GithubOauthInterceptor);
     this.bind('passport-twitter').toProvider(TwitterOauthInterceptor);
+    this.bind('passport-microsoft').toProvider(MicrosoftOauthInterceptor);
     this.bind('passport-oauth2').toProvider(CustomOauth2Interceptor);
     this.bind('set-session-user').toProvider(SessionAuth);
   }

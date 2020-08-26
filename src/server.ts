@@ -46,6 +46,7 @@ export class ExpressServer {
     this.lbApp.bind('linkedinOAuth2Options').to(options.linkedinOptions);
     this.lbApp.bind('githubOAuth2Options').to(options.githubOptions);
     this.lbApp.bind('twitterOAuth2Options').to(options.twitterOptions);
+    this.lbApp.bind('microsoftOAuth2Options').to(options.microsoftOptions);
     this.lbApp.bind('customOAuth2Options').to(options.oauth2Options);
 
     // Serve static files in the public folder
