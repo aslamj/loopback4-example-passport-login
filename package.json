@@ -1,7 +1,7 @@
 {
-  "name": "@loopback/example-passport-login",
-  "version": "1.5.3",
-  "description": "An example to demonstrate authentication with passport strategies",
+  "name": "loopback4-example-passport-login",
+  "version": "1.0.0",
+  "description": "An example to demonstrate authentication with various passport strategies",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "engines": {
@@ -27,11 +27,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/strongloop/loopback-next.git",
-    "directory": "examples/passport-login"
+    "url": "https://github.com/aslamj/loopback4-example-passport-login.git"
   },
-  "author": "IBM Corp.",
-  "copyright.owner": "IBM Corp.",
+  "author": "Jangul Aslam",
+  "copyright.owner": "Jangul Aslam",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -101,7 +100,13 @@
     "example",
     "tutorial",
     "passport",
-    "authentication"
-  ],
-  "gitHead": "1619bf0c29aa03853a7977212e60028664fca640"
+    "authentication",
+    "social-auth",
+    "facebook-oauth",
+    "google-oauth",
+    "twitter-oauth",
+    "linkedin-oauth",
+    "github-oauth",
+    "microsoft-oauth"
+  ]
 }

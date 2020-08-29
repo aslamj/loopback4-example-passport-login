@@ -1,4 +1,4 @@
-# @loopback/example-passport-login
+# @loopback4-example-passport-login
 
 A tutorial for implementing authentication in LoopBack 4 using
 [passport](https://github.com/jaredhanson/passport) modules.
@@ -95,7 +95,11 @@ Open browser to http://localhost:3000
    `Other login options`.
    - [Facebook](#Try-it-out-with-FaceBook)
    - [Google](#Try-it-out-with-Google)
-   - `Twitter` - not yet implemented
+   - [Twitter](#Try-it-out-with-Twitter)
+   - [LinkedIn](#Try-it-out-with-LinkedIn)
+   - [Github](#Try-it-out-with-Github)
+   - [Microsoft](#Try-it-out-with-Microsoft)
+
 2. When you click on any login option, the page is redirected to that social
    app's login page. On successful login with the social app, the `View account`
    page is loaded.
@@ -110,7 +114,11 @@ Open browser to http://localhost:3000
    `Other login options`.
    - [Facebook](#Try-it-out-with-FaceBook)
    - [Google](#Try-it-out-with-Google)
-   - `Twitter` - not yet implemented
+   - [Twitter](#Try-it-out-with-Twitter)
+   - [LinkedIn](#Try-it-out-with-LinkedIn)
+   - [Github](#Try-it-out-with-Github)
+   - [Microsoft](#Try-it-out-with-Microsoft)
+
 2. When you click on any login option, the page is redirected to that social
    app's login page. On successful login with the social app, the `View account`
    page is loaded.
