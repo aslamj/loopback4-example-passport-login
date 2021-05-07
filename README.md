@@ -8,6 +8,10 @@ A tutorial for implementing authentication in LoopBack 4 using
 - [Install](#install-the-example-locally)
 - [Tutorial - Facebook](#Try-it-out-with-FaceBook)
 - [Tutorial - Google](#Try-it-out-with-Google)
+- [Tutorial - Twitter](#Try-it-out-with-Twitter)
+- [Tutorial - LinkedIn](#Try-it-out-with-LinkedIn)
+- [Tutorial - Github](#Try-it-out-with-Github)
+- [Tutorial - Microsoft](#Try-it-out-with-Microsoft)
 
 ## Overview
 
@@ -32,7 +36,10 @@ party apps
 
 - [Facebook](https://developers.facebook.com/apps)
 - [Google](https://console.developers.google.com/project)
-- [twitter](https://apps.twitter.com/) **Not yet implemented**
+- [Twitter](https://console.developers.google.com/project)
+- [LinkedIn](https://console.developers.google.com/project)
+- [Github](https://console.developers.google.com/project)
+- [Microsoft](https://console.developers.google.com/project)
 
 ## Authentication using passport strategies as Express middleware
 
